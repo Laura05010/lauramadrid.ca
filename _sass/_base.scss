@@ -227,6 +227,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
@@ -646,7 +647,7 @@ footer.sticky-bottom {
 
   h2.category {
     color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    border-bottom: 2px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -654,10 +655,18 @@ footer.sticky-bottom {
   }
 }
 
+// search bar used for projects/ publications
+// centers the search
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically (if needed) */
+}
+
 // Publications
 
 .publications {
-  margin-top: 2rem;
+ margin-top: 2rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -676,7 +685,7 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-theme-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -750,8 +759,8 @@ footer.sticky-bottom {
 
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: var(--global-theme-color); // to make the buttons dark blue
+          border: 1px solid var(--global-theme-color); // to make the buttons dark blue
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
@@ -759,8 +768,8 @@ footer.sticky-bottom {
           margin-left: 0;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-hover-color);
+            border-color: var(--global-hover-color);
           }
         }
         a.award.btn {

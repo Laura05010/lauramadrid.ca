@@ -1,25 +1,39 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+subtitle:
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <a href='https://www.linkedin.com/in/laura-madrid/' style="display: inline-block; padding: 10px 15px; border: 2px solid #37A6A6; border-radius: 25px; color: #37A6A6; text-decoration: none;">LinkedIn</a>
+    <a href='https://github.com/Laura05010' style="display: inline-block; padding: 10px 15px; border: 2px solid #37A6A6; border-radius: 25px; color: #37A6A6; text-decoration: none;">Github</a>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+<style>
+    .subtitle {
+        color: #37A6A6; /* Change this to your desired color */
+    }
+</style>
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<h4 class="subtitle">Thank you for visiting my site!</h4>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Hi, I’m Laura Madrid, a recent Computer Science graduate from the University of Toronto. I’m currently applying to graduate programs with a focus on using Computer Vision for good, particularly in areas like human-computer interaction (HCI), healthcare, and accessibility. I’m eager to join a lab where I can contribute to meaningful projects that harness technology to make a real-world impact.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My journey has been shaped by diverse industry experience, teaching, and research. I’ve worked on projects in backend, frontend, and mobile development, applying Computer Vision in healthcare, accessibility, and real estate. Notably, I contributed to a brain tumor classification model and a tool for visually impaired rock climbers. I’m also a research assistant in the Medical Computer Vision and Robotics ([MedCVR](https://medcvr.utm.utoronto.ca/)) Lab, where I work on endoscope pose differentiation in the larynx. These experiences have helped me grow into a well-rounded aspiring researcher with a focus on using Computer Vision for good.
+
+Outside of work, I enjoy rock climbing, [drawing](/art), and hiking. Feel free to reach out if you'd like to connect or collaborate, I’d love to hear from you. You can email me at **madrid.laura@outlook.com**
+
+> "Life is a gift, and it offers us the privilege, opportunity, and responsibility to give something back by becoming more."
+> — Tony Robbins
+
+<style>
+    .subtitle {
+        color: #37A6A6; /* Change this to your desired color */
+    }
+</style>
