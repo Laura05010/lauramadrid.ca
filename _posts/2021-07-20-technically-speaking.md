@@ -2,7 +2,7 @@
 layout: post
 title: Technically speaking
 date: 2021-07-20 16:00:00 +0530
-description: How learning languages is similar to learn how to program.
+description: How learning languages is similar to learning how to program.
 tags: languages, code
 thumbnail: assets/thumbnails/technically_speaking.png
 featured: false

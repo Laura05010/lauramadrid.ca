@@ -2,7 +2,7 @@
 layout: post
 title: Social Media Addictions
 date: 2022-11-07 16:00:00 +0530
-description: Diving deep into addictive user design
+description: Diving deep into addictive user design.
 tags: life-lessons
 thumbnail: assets/img/SMA_post/Screen_Shot_2022-11-07_at_3.37.36_PM.png
 featured: false
