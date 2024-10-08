@@ -2,92 +2,163 @@
  * Themes
  ******************************************************************************/
 
-@use "sass:color";
+ @use "sass:color";
 
-:root {
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$my-cyan-color};
-  --global-hover-color: #{$my-dark-blue};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$my-dark-blue};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
-
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
-
-  // #light-toggle-system {
-  //   padding-left: 10px;
-  //   padding-top: 12px;
-  //   display: block;
-  // }
-
-  #light-toggle-dark {
-    display: none;
+ :root {
+   --global-bg-color: #{$white-color};
+   --global-code-bg-color: #{$code-bg-color-light};
+   --global-text-color: #{$black-color};
+   --global-text-color-light: #{$grey-color};
+   --global-theme-color: #{$my-cyan-color};
+   --global-hover-color: #{$my-cyan-color};
+   --global-hover-text-color: #{$white-color};
+   --global-footer-bg-color: #{$my-dark-blue};
+   --global-footer-text-color: #{$grey-color-light};
+   --global-footer-link-color: #{$white-color};
+   --global-distill-app-color: #{$grey-color};
+   --global-divider-color: rgba(0, 0, 0, 0.1);
+   --global-card-bg-color: #{$white-color};
+   --global-highlight-color: #{$red-color-dark};
+   --global-back-to-top-bg-color: rgba(
+     #{color.channel($black-color, "red", $space: rgb)},
+     #{color.channel($black-color, "green", $space: rgb)},
+     #{color.channel($black-color, "blue", $space: rgb)},
+     0.4
+   );
+   --global-back-to-top-text-color: #{$white-color};
+   --global-newsletter-bg-color: #{$white-color};
+   --global-newsletter-text-color: #{$black-color};
+ 
+   --global-tip-block: #42b983;
+   --global-tip-block-bg: #e2f5ec;
+   --global-tip-block-text: #215d42;
+   --global-tip-block-title: #359469;
+   --global-warning-block: #e7c000;
+   --global-warning-block-bg: #fff8d8;
+   --global-warning-block-text: #6b5900;
+   --global-warning-block-title: #b29400;
+   --global-danger-block: #c00;
+   --global-danger-block-bg: #ffe0e0;
+   --global-danger-block-text: #600;
+   --global-danger-block-title: #c00;
+ 
+   #light-toggle-dark {
+     display: none;
+   }
+ 
+   #light-toggle-light {
+     display: none;
+   }
+ 
+   .repo-img-light {
+     display: block;
+   }
+   .repo-img-dark {
+     display: none;
+   }
+ 
+   #back-to-top {
+     color: var(--global-back-to-top-text-color);
+     background: var(--global-back-to-top-bg-color);
+     bottom: $back-to-top-bottom;
+     right: $back-to-top-right;
+     height: $back-to-top-height;
+     width: $back-to-top-width;
+     z-index: $back-to-top-z-index;
+   }
+   //Gallery card titles and subtitles :)
+   .card .card-title {
+    color: var(--global-text-color);
+    }
+   /*******************************************************************************
+    * Custom Button Styles
+    ******************************************************************************/
+   .custom-button {
+     display: inline-block;
+     padding: 10px 15px;
+     border: 2px solid #{$my-cyan-color};
+     border-radius: 25px;
+     color: #{$my-cyan-color};
+     text-decoration: none;
+     transition: background-color 0.3s, color 0.3s;
+ 
+     &:hover {
+       border: #{$my-cyan-color};
+       background-color: #{$my-cyan-color};
+       color: var(--global-hover-text-color);
+     }
+   }
+   // the subtitle on the about site
+   .subtitle {
+    color: #{$my-cyan-color}; /* Change this to your desired color */
   }
 
-  #light-toggle-light {
-    display: none;
+  // For the project buttons
+  .btn {
+    &:hover {
+      border: 2px solid #{$my-cyan-color}; /* Adjust the border as needed */
+      background-color: #{$my-cyan-color}; /* Pink background on hover */
+    }
   }
 
-  .repo-img-light {
-    display: block;
-  }
-  .repo-img-dark {
-    display: none;
+  .publications ol.bibliography li .links a.btn {
+    &:hover {
+      color: #{$white-color};
+    }
   }
 
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-    bottom: $back-to-top-bottom;
-    right: $back-to-top-right;
-    height: $back-to-top-height;
-    width: $back-to-top-width;
-    z-index: $back-to-top-z-index;
+  // For teaching / note cards
+  .course-badge {
+    background-color: #{$my-dark-blue-lighter};
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25rem;
+    text-align: center;
+    vertical-align: middle;
   }
-}
 
-html[data-theme="dark"] {
-  --global-bg-color: #{$grey-color-dark};
+  .btn-learning {
+    display: inline-block; /* To make it behave like a button */
+    border: 1px solid  #{$my-cyan-color};
+    color: #{$my-cyan-color};
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-left: 0;
+    font-size: 0.75rem; /* Font size */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.2s; /* Smooth background color change */
+  }
+  .btn-learning:hover {
+    background-color: #{$my-cyan-color}; /* Darker shade on hover */
+    color: #{$white-color};
+  }
+  .small-icon {
+    font-size: 0.75em; /* Adjust the size as needed */
+    vertical-align: middle; /* Align with the text */
+    margin-left: 1px; /* Optional: add some space between text and icon */
+  }
+ }
+
+ html[data-theme="dark"] {
+  --global-bg-color: #{$my-dark-blue};
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$my-cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #{$my-pink};
+  --global-hover-color: #{$my-pink};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: #{$my-cyan-color};
+  --global-card-bg-color: #{$my-dark-blue-lighter};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},
@@ -117,41 +188,102 @@ html[data-theme="dark"] {
   .repo-img-dark {
     display: block;
   }
+
+  //Gallery card titles
+  .card .card-title {
+    color: #{$white-color};
+  }
+  
+  .card .card-body .card-text {
+    color: #{$grey-color-80};
+  }
+
+  // For the about page
+  .custom-button {
+    border: 2px solid #{$my-pink}; /* Custom color for dark mode */
+    color: #{$my-pink}; /* Text color for dark mode */
+    background-color: transparent;
+
+    &:hover {
+      border: #{$my-pink};
+      background-color: #{$my-pink};
+      color: var(--global-hover-text-color);
+    }
+  }
+  .subtitle {
+    color: #{$my-pink};
+  }
+  // For the blog page
+  .fas, .fa-classic, .fa-solid, .far, .fa-regular {
+    color: #{$grey-color-80};
+  }
+  .post .post-tags a {
+    color: #{$grey-color-80};
+    &:hover {
+      color:#{$my-pink};
+    }
+  }
+  .post-list li .post-meta {
+    color: #{$grey-color-80};
+  }
+
+  //  For the project buttons
+  .btn {
+    &:hover {
+      border: 2px solid #{$my-pink}; /* Adjust the border as needed */
+      background-color: #{$my-pink}; /* Pink background on hover */
+    }
+  }
+
+  .publications ol.bibliography li .links a.btn {
+    &:hover {
+      color: #{$white-color};
+    }
+  }
+
+  // For teaching / note cards
+  .list-group .list-group-item {
+    background-color: #{$my-dark-blue-lighter};
+  }
+  .course-badge {
+    background-color: #{$my-cyan-color};
+  }
+  .btn-learning {
+    border: 1px solid  #{$my-pink};
+    color: #{$my-pink};
+  }
+  .btn-learning:hover {
+    background-color: #{$my-pink}; /* Darker shade on hover */
+    color: #{$white-color};
+  }
 }
-
-html[data-theme-setting="dark"] {
-  // #light-toggle-system {
-  //   display: none;
-  // }
-
-  #light-toggle-dark {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
-  }
-
-  #light-toggle-light {
-    display: none;
-  }
-
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-  }
-}
-
-html[data-theme-setting="light"] {
-  // #light-toggle-system {
-  //   display: none;
-  // }
-
-  #light-toggle-dark {
-    display: none;
-  }
-
-  #light-toggle-light {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
-  }
-}
+ 
+ html[data-theme-setting="dark"] {
+   #light-toggle-dark {
+     padding-left: 10px;
+     padding-top: 12px;
+     display: block;
+   }
+ 
+   #light-toggle-light {
+     display: none;
+   }
+ 
+   #back-to-top {
+     color: var(--global-back-to-top-text-color);
+     background: var(--global-back-to-top-bg-color);
+   }
+ }
+ 
+ html[data-theme-setting="light"] {
+   #light-toggle-dark {
+     display: none;
+   }
+ 
+   #light-toggle-light {
+     padding-left: 10px;
+     padding-top: 12px;
+     display: block;
+   }
+ }
+ 

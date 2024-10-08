@@ -24,9 +24,12 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 $my-cyan-color: #37A6A6 !default;
-$my-dark-blue: #202359 !default;
+$my-dark-blue: #181a41 !default;
+$my-pink: #ff66c4 !default;
+$my-dark-blue-lighter: #202359!default;
 
 $grey-color: #828282 !default;
+$grey-color-80: #d3d3d3;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
 $grey-900: #212529;
