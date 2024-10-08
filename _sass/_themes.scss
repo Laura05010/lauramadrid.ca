@@ -75,10 +75,11 @@
     ******************************************************************************/
    .custom-button {
      display: inline-block;
-     padding: 10px 15px;
      border: 2px solid #{$my-cyan-color};
-     border-radius: 25px;
+     padding: 0.25em 0.5em;
+     border-radius: 0.25rem;
      color: #{$my-cyan-color};
+     font-size: 0.9rem; /* Font size */
      text-decoration: none;
      transition: background-color 0.3s, color 0.3s;
  

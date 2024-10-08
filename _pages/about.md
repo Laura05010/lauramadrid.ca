@@ -8,8 +8,12 @@ profile:
   image: profile.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <a href='https://www.linkedin.com/in/laura-madrid/' class="custom-button">LinkedIn</a>
-    <a href='https://github.com/Laura05010' class="custom-button">GitHub</a>
+    <a href='https://www.linkedin.com/in/laura-madrid/' class="custom-button">
+    LinkedIn <i class="fab fa-linkedin"></i>
+    </a>
+    <a href='https://github.com/Laura05010' class="custom-button">
+        GitHub <i class="fab fa-github"></i>
+    </a>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
